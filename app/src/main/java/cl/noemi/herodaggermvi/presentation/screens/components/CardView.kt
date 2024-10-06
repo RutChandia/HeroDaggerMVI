@@ -34,9 +34,9 @@ fun CardView(superHero: SuperHero, onItemClick: (Int) -> Unit) {
         elevation =  CardDefaults.cardElevation(
             defaultElevation = 8.dp),
         shape = RoundedCornerShape(10.dp),
-        /*colors = CardDefaults.cardColors(
+        colors = CardDefaults.cardColors(
             containerColor = colorScheme.surfaceBright,
-        )*/
+        )
     ) {
         Column(modifier = Modifier.padding(bottom = 8.dp)) {
             AsyncImage(
