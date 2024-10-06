@@ -21,8 +21,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import cl.noemi.herodaggermvi.R
-import coil.compose.AsyncImage
 import cl.noemi.herodaggermvi.domain.model.SuperHero
+import coil.compose.AsyncImage
 
 @Composable
 fun CardView(superHero: SuperHero, onItemClick: (Int) -> Unit) {
