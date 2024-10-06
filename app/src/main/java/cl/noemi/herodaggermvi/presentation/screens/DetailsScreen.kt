@@ -43,7 +43,6 @@ fun DetailsScreen(viewModel: HeroViewModel) {
     DetailsScreenTabs(hero = superHero)
 }
 
-
 @Composable
 private fun DetailsScreenTabs(hero: SuperHero?) {
     val tabTitles = listOf(
