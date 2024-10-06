@@ -37,7 +37,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         compose = true
@@ -72,8 +72,19 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     //Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    val retrofitVersion = "2.11.0"
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+
+    //Coil, for images
+    implementation("io.coil-kt:coil-compose:2.7.0")
+
+    //Orbit MVI
+    val orbitVersion = "9.0.0"
+    implementation("org.orbit-mvi:orbit-core:$orbitVersion")
+    implementation ("org.orbit-mvi:orbit-viewmodel:$orbitVersion")
+    implementation ("org.orbit-mvi:orbit-compose:$orbitVersion")
+    testImplementation("org.orbit-mvi:orbit-test:$orbitVersion")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
