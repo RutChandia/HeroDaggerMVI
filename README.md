@@ -1,13 +1,13 @@
 # HeroDaggerMVI
 
-Aplicación móvil desarrollada en Kotlin, que utiliza las siguientes tecnologías principales:
+Aplicación móvil desarrollada en Kotlin, que consume la [superhero-api](https://akabab.github.io/superhero-api/api/)
 
 ## Funcionalidades
-- Lista de superhéroes obtenida de una API externa.
 - Pantalla de detalles para cada superhéroe.
 - Arquitectura basada en **MVI** (Model-View-Intent) utilizando **Orbit MVI**.
 - Navegación basada en **Jetpack Compose Navigation**.
 - Inyección de dependencias mediante **Dagger Hilt**.
+- Consumo de API con **Retrofit**.
 
 ## Arquitectura
 El proyecto sigue el patrón de arquitectura MVI:
